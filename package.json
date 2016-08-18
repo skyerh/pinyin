@@ -1,0 +1,36 @@
+{
+  "name": "pinyin-picowork",
+  "version": "1.0.0",
+  "description": "fix some bugs, for example ¥d¤ñshould be 'ka bi shou' not 'qia bi shou'",
+  "files": [
+    "bin",
+    "data",
+    "lib",
+    "index.js",
+    "src"
+  ],
+  "keywords": [
+    "Pinyin",
+		"picowork"
+  ],
+  "main": "lib/index.js",
+  "bin": {
+    "pinyin": "./bin/pinyin"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skyerh/pinyin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skyerh/pinyin/issues"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "browser": "lib/web-pinyin.js",
+  "license": "MIT"
+}
