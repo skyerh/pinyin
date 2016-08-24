@@ -1,6 +1,6 @@
 {
   "name": "pinyin-picowork",
-  "version": "1.0.1",
+  "version": "1.0.333",
   "description": "fix some bugs, for example ¥d¤ñshould be 'ka bi shou' not 'qia bi shou'",
   "files": [
     "bin",
