@@ -1,6 +1,6 @@
 {
   "name": "pinyin-picowork",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fix some bugs, for example ¥d¤ñshould be 'ka bi shou' not 'qia bi shou'",
   "files": [
     "bin",
@@ -11,7 +11,7 @@
   ],
   "keywords": [
     "Pinyin",
-		"picowork"
+    "picowork"
   ],
   "main": "lib/index.js",
   "bin": {
@@ -30,6 +30,35 @@
   },
   "scripts": {
     "test": "make test"
+  },
+  " dependencies " : {
+    " commander " : " ~1.1.1 " ,
+    " object-assign " : " ^4.0.1 "
+  },
+   " optionalDependencies " : {
+    " nodejieba " : " ^2.2.1 "
+  },
+  " devDependencies " : {
+    " benchmark " : " ~1.0.0 " ,
+    " eslint " : " ~0.24.0 " ,
+    " expect.js " : " 0.3.1 " ,
+    " istanbul " : " ~0.3.17 " ,
+    " mocha " : " 1.17.1 " ,
+    " request " : " 2.33.0 "
+  },
+  " spm " : {
+    " main " : " lib/web-pinyin.js " ,
+    " devDependencies " : {
+      " expect.js " : " 0.3.1 " ,
+      " url " : " 1.2.0 "
+    },
+    " build " : {
+      " babel " : {}
+    },
+    " tests " : " tests/*-spec.js " ,
+    " dependencies " : {
+      " object-assign " : " ~4.0.1 "
+    }
   },
   "browser": "lib/web-pinyin.js",
   "license": "MIT"
